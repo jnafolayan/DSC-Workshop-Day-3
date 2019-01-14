@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Students Record App</title>
+	<link rel="stylesheet" type="text/css" href="./style.css">
+</head>
+<body>
+	<nav class="navbar">
+		Students Record App
+	</nav>
+	<div class="body">
+		<table>
+			<thead>
+				<th>S/N</th>
+				<th>Matric number</th>
+				<th>First name</th>
+				<th>Last name</th>
+				<th>Age</th>
+			</thead>
+			<tbody>
+				<% records.forEach(function(record, i) { %>
+				<tr>
+					<td><%= (i+1) %></td>
+					<td><%= record.matric %></td>
+					<td><%= record.firstName %></td>
+					<td><%= record.lastName %></td>
+					<td><%= record.age %></td>
+				</tr>
+				<% }); %>
+			</tbody>
+		</table>
+	</div>
+</body>
+</html>

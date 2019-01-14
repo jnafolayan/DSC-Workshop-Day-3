@@ -1,0 +1,24 @@
+{
+  "name": "workshop-d3",
+  "version": "1.0.0",
+  "description": "solution to the assignment",
+  "main": "server/server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/johnafolayan/DSC-Workshop-D3-Todo.git"
+  },
+  "author": "John Afolayan <hughj32001@gmail.com> (softdemos.000webhostapp.com)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/johnafolayan/DSC-Workshop-D3-Todo/issues"
+  },
+  "homepage": "https://github.com/johnafolayan/DSC-Workshop-D3-Todo#readme",
+  "dependencies": {
+    "ejs": "^2.6.1",
+    "express": "^4.16.3"
+  }
+}
