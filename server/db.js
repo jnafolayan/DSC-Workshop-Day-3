@@ -8,7 +8,7 @@ let records;
 const db = {};
 
 db.retrieve = () => {
-	return readFile('log.json', 'utf-8')
+	return readFile(__dirname + '/log.json', 'utf-8')
 		.then(data => {
 			records = JSON.parse(data).records;
 		});
@@ -43,6 +43,11 @@ db.find = promisify((query, cb) => {
 		}
 	}
 	return cb(new Error("Couldn't find :("));
+});
+
+db.findAll = promisify(cb => {
+	return cb(null, records);
+	// return cb(new Error("Couldn't find :("));
 });
 
 db.retrieve()
