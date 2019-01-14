@@ -1,3 +1,5 @@
+Exercise given on the 3rd day of the Developer Student Club
+
 ## Assignment
 
 Using NodeJS and the express framework, build a minimal record system. This system should hold the first and last names of random students, along with their ages.
